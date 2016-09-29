@@ -17,19 +17,14 @@ import MyRobot.Robot;
 /**
  *
  */
-public class DriveForward extends Command {
+public class AutonomousCommand extends Command {
 	
-	double seconds = 10;
-	
-    public DriveForward() {
-    	requires(Robot.drive);
+    public AutonomousCommand() {
+
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	this.setTimeout(seconds);
-    	Robot.drive.setSafety(false);
-    	Robot.drive.driveSpeed(10, 0);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -38,18 +33,15 @@ public class DriveForward extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return this.isTimedOut();
+        return false;
     }
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.drive.setSafety(true);
-    	Robot.drive.driveSpeed(0, 0);
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	end();
     }
 }
