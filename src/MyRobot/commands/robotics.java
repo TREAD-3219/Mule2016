@@ -19,7 +19,7 @@ public class robotics extends Command{
 
 	@Override
 	protected void initialize() {this.setTimeout(9);
-		// TODO Auto-generated method stub
+		Robot.drive.setSafety(false);
 		Robot.drive.driveValues(6,0);
 	}
 
