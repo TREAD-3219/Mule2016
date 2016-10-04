@@ -18,7 +18,8 @@ public class AutoCommandy extends Command {
 
 	@Override
 	protected void initialize() {
-		Robot.drive.driveValues(10, 0);
+		Robot.drive.setSafety(false);
+		Robot.drive.driveValues(5, 0);
 		this.setTimeout(1);
 	}
 
