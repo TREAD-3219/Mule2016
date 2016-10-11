@@ -20,7 +20,7 @@ public class robotics extends Command{
 	@Override
 	protected void initialize() {this.setTimeout(5);
 		Robot.drive.setSafety(false);
-		Robot.drive.driveValues(1,0);
+		Robot.drive.driveValues(.4,0);
 	}
 
 	@Override
