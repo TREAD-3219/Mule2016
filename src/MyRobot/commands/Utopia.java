@@ -18,7 +18,7 @@ public class Utopia extends Command {
 	@Override
 	protected void initialize() { 
 		Robot.drive.setSafety(false);
-		Robot.drive.driveValues(15, 0);
+		Robot.drive.driveValues(.8, 0);
 		this.setTimeout(5);
 	}
 
