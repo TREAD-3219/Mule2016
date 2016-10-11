@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.command.Command;
 public class robotics extends Command{
 
 	@Override
-	protected void end() {this.setTimeout(9);
+	protected void end() {Robot.drive.driveValues(0, 0);
 		// TODO Auto-generated method stub
 		
 	}
