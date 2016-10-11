@@ -18,9 +18,9 @@ public class robotics extends Command{
 	}
 
 	@Override
-	protected void initialize() {this.setTimeout(9);
+	protected void initialize() {this.setTimeout(5);
 		Robot.drive.setSafety(false);
-		Robot.drive.driveValues(6,0);
+		Robot.drive.driveValues(1,0);
 	}
 
 	@Override
