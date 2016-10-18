@@ -7,7 +7,7 @@ public class Forward extends Command{
 
 	@Override
 	protected void end() {
-		// TODO Auto-generated method stub
+		Robot.drive.driveValues(0 ,0);
 		
 	}
 
@@ -18,8 +18,8 @@ public class Forward extends Command{
 	}
 
 	@Override
-	protected void initialize() {
-		Robot.drive.driveValues(.5, .7);
+	protected void initialize(){
+		Robot.drive.driveValues(.8 ,.7);
 		Robot.drive.setSafety(false);
 		this.setTimeout(5);
 	}
