@@ -4,6 +4,6 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 
 public class AutoCircle extends CommandGroup{
 	public AutoCircle() {
-		this.addSequential(new AutonomousCommand());
+		this.addSequential(new Forward());
 	}
 }
