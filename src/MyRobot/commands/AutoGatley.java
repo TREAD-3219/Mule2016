@@ -24,7 +24,7 @@ public class AutoGatley extends Command {
 	//What it does right when the program starts, once.
 	protected void initialize() {
 		//make the robot drive forward
-		Robot.drive.driveValues(5, 0); // inches per second, turning in degrees/IPS?
+		Robot.drive.driveValues(5, 0); // (inches per second, turning)
 		//tell the robot to wait for one second before letting isFinished return true, running end.
 		this.setTimeout(1);
 	}
