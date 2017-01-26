@@ -11,11 +11,12 @@
 
 package MyRobot.subsystems;
 
+import com.ctre.CANTalon;
+
 import MyRobot.RobotMap;
 import MyRobot.commands.*;
-import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.RobotDrive;
-
+import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
